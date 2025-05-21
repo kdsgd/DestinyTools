@@ -1,0 +1,11 @@
+# 参考 Mirai 组件文档：https://docs.mirai.mamoe.net/mirai-api-http/
+component: simbot.mirai
+code: 3889621062 # 替换为你的 QQ 号
+passwordInfo:
+  type: text
+  text: "1jR9sbK3mVEyiSCwgQBwhSDyjUG2oaM8" # 替换为你的 QQ 密码
+config:
+  protocol: MACOS # 使用 MACOS 协议避免风控
+  heartbeat:
+    enable: true
+    interval: 60000 # 心跳间隔（毫秒）

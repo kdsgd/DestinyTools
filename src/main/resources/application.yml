@@ -1,0 +1,29 @@
+server:
+  port: 10086
+  servlet:
+    session:
+      timeout: 120s
+
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 200MB
+
+
+# QQ 机器人配置
+simbot:
+  core:
+    # bot的qq账号与密码。
+    bots: 1134518937:wbszgjkl12369
+  auto-start-bots: true
+  bot-configuration-resources:
+    - classpath:simbot-bots/*.bot*
+
+# Bungie API 密钥
+bungie:
+  api-key: 40155481df5f421f9802de843048b75b
+  base-url: https://www.bungie.net/Platform
